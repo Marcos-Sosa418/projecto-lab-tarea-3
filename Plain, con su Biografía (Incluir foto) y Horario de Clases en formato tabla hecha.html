@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: gray;
+        }
+        #myImage {
+            max-width: 200px; 
+            height: auto;
+            border-radius: 10px; 
+        }
+        
+        h1, h2, {
+            font-weight: bold;
+            color: black;
+        }
+        .perfil {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; 
+            margin-bottom: 20px;
+        }
+        .datos {
+            max-width: 600px; 
+        .datos p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biografía</h1>
+        <div class="perfil">
+            <img id="myImage" src="https://raw.githubusercontent.com/Marcos-Sosa418/projecto--ab-3/323da24a7d07060973e3111fb3b9d55789b19ef7/me.jpg" alt="Marcos Jose Sosa Paulino" onerror="imagenError()">
+            
+            <div class="datos">
+                <p><strong>Nombre completo:</strong> Marcos Jose Sosa Paulino</p>
+                <p><strong>Matrícula:</strong> 100547908</p>
+                <p><strong>Fecha de nacimiento:</strong> 18 de abril del 2000</p>
+                <p><strong>Lugar de nacimiento:</strong> Santo Domingo, República Dominicana</p>
+                <p><strong>Carrera:</strong> Licenciatura en Informática (UASD)</p>
+				 <p><strong>Nacionalidad:</strong> Dominicano </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Familiar</h2>
+        <p><strong>Papa:</strong> Marcos Antonio Sosa Vargas</p>
+		<p><strong>Mama:</strong> Miguelina Paulino Mosquea</p>
+		<p><strong>Hermano:</strong> Miguel Angel Sosa Paulino</p>
+		
+		<h2> Formación académica</h2>
+		 <p> Estudie en la escuela Ensanche Espaillat donde tome la primaria y bachillerato y actualmente estoy en la uasd  </p>
+		 
+		<h2> Trayectoria profesional</h2>
+		<p> No realizado </p>
+		
+		<h2> Producción intelectual o artística </h2>
+		<p> Antes dibujaba pero por hobby </p>
+		
+		<h2> Reconocimientos y logros </h2>
+		<p> Tengo 4 medallas de honor </p>
+		
+		<h2> Aportes sociales y comunitarios </h2>
+		<p> Ninguno </p>
+		
+        <h2>Horario de Clases</h2>
+        <table>
+            <tr>
+                <th>Materia</th>
+                <th>Días</th>
+                <th>Hora</th>
+                <th>Aula</th>
+                <th>Maestro</th>
+            </tr>
+			<tr>
+                <td>Inteligencia Artificial</td>
+                <td>Martes</td>
+                <td>7:00 PM - 9:50 PM</td>
+                <td>Laboratorio de informática 108</td>
+                <td>Angel Asencio M</td>
+            </tr>
+            <tr>
+                <td>Lab Lenguaje de Program III</td>
+                <td>Miércoles</td>
+                <td>7:00 AM - 8:50 AM</td>
+                <td>Laboratorio de informática 103</td>
+                <td>Radhames Silverio Gonzalez</td>
+            </tr>
+        </table>
+        
+    </main>
+
+    <script>
+        function imagenError() {
+            var img = document.getElementById('myImage');
+            img.style.display = 'none'; 
+            alert('Error al cargar la imagen');
+        }
+    </script>
+</body>
+</html>
